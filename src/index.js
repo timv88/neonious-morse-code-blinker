@@ -8,7 +8,9 @@ const morse = require('./morse.js');
 const mimeTypes = {
     '.html': 'text/html',
     '.js': 'text/javascript',
-    '.css': 'text/css'
+    '.css': 'text/css',
+    '.png': 'image/png',
+    '.ico': 'image/x-icon'
 };
 
 const serveStatic = (req, res) => {
