@@ -1,0 +1,60 @@
+:root {
+    --border-radius: .2rem;
+    --border: .05rem solid #bdbdbd;
+    --background-color: #fafafa;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    background-image: radial-gradient(var(--background-color), #eeeeee);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: Consolas, Helvetica, sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: var(--border-radius);
+}
+input {
+    font-size: 2rem;
+    line-height: 2;
+    padding: .5rem 1rem;
+    border: var(--border);
+    border-right: 0;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+button {
+    background-color: #eeeeee;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+
+    border: var(--border);
+    font-size: 2rem;
+    line-height: 2;
+    display: flex;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
